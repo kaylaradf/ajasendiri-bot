@@ -21,14 +21,8 @@ def detect_wordlist(text):
     for symbol, letter in CHAR_REPLACEMENTS.items():
         text_lower = text_lower.replace(symbol, letter)
     
-    clean = re.sub(r'[^a-zA-Z]', '', text_lower)
-    
     for config_key, config in WORDLIST_CONFIG.items():
-        # Method 1: Pattern matching
-        if re.search(config['pattern'], clean):
-            return config_key
-        
-        # Method 2: Fuzzy matching
+        # Only fuzzy matching
         words = re.findall(r'[a-z]+', text_lower)
         keywords_found = {keyword: False for keyword in config['keywords']}
         
