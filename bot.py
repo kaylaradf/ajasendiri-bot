@@ -80,7 +80,8 @@ def play_audio(voice_client):
     is_playing = True
     audio_source = discord.FFmpegPCMAudio(
         VOICE_CONFIG['audio_file'],
-        options=f"-stream_loop -1 -b:a {VOICE_CONFIG['bitrate']}k"
+        before_options=f"-stream_loop -1",
+        options=f"-b:a {VOICE_CONFIG['bitrate']}k"
     )
     audio_source = discord.PCMVolumeTransformer(audio_source, volume=VOICE_CONFIG['volume'])
     voice_client.play(audio_source, after=lambda e: print(f'Error: {e}') if e else None)
