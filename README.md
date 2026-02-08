@@ -1,17 +1,20 @@
 # Ajasendiri Bot
 
-Bot Discord yang mendeteksi berbagai wordlist dan merespons dengan gambar, plus bisa stay di voice channel.
+Bot Discord yang mendeteksi berbagai wordlist dan merespons dengan gambar, plus bisa stay di voice channel dengan background audio.
 
 ## Fitur
 
 ### 1. Wordlist Detection
 Bot mendeteksi kata-kata tertentu dalam pesan dan merespons dengan gambar.
 
-### 2. Voice Channel Stay
-Bot bisa join voice channel dan stay (deafened) tanpa ngapa-ngapain.
+### 2. Voice Channel with Background Audio
+Bot bisa join voice channel dan play audio loop dengan volume sangat pelan (background opacity).
 
 **Slash Commands:**
-- `/join` - Join voice channel dan stay (deafened)
+- `/join` - Join voice channel dan play audio loop (deafened, volume 5%)
+- `/stop` - Stop audio tapi tetap di channel
+- `/play` - Resume audio loop
+- `/volume <level>` - Set volume (0.0 - 1.0, default 0.05 untuk background)
 - `/leave` - Keluar dari voice channel
 
 ## Cara Menambah Wordlist Baru
@@ -31,9 +34,22 @@ Bot bisa join voice channel dan stay (deafened) tanpa ngapa-ngapain.
 }
 ```
 
+## Setup Voice Feature
+
+1. Tambahkan audio file ke `assets/loop-audio.mp3`
+2. Edit `config.py` di bagian `VOICE_CONFIG` untuk mengatur:
+   - `audio_file`: Path ke audio file
+   - `bitrate`: Kualitas audio (default 128 kbps)
+   - `volume`: Volume level (default 0.05 = 5% untuk background opacity)
+
 ## Dependencies
 
 Install dengan: `pip install -r requirements.txt`
+
+**Catatan:** Untuk voice feature, kamu perlu install FFmpeg di VPS:
+```bash
+sudo apt update
+sudo apt install ffmpeg libsodium-dev libffi-dev python3-dev -y
 
 ## Setup
 

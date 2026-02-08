@@ -35,3 +35,10 @@ CHAR_REPLACEMENTS = {
     '7': 't', '+': 't',
     '8': 'b', '6': 'g'
 }
+
+# Voice channel configuration
+VOICE_CONFIG = {
+    "audio_file": "assets/loop-audio.mp3",
+    "bitrate": 128,
+    "volume": 0.05  # Very quiet background (5%)
+}
