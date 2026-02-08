@@ -82,11 +82,14 @@ async def join(interaction: discord.Interaction):
         await interaction.response.send_message("Bot sudah di voice channel!", ephemeral=True)
         return
     
+    # Defer response to prevent timeout
+    await interaction.response.defer()
+    
     try:
         voice_client = await channel.connect(self_deaf=True)
-        await interaction.response.send_message(f"Joined {channel.name} dan stay (deafened)!")
+        await interaction.followup.send(f"Joined {channel.name} dan stay (deafened)!")
     except Exception as e:
-        await interaction.response.send_message(f"Error: {e}", ephemeral=True)
+        await interaction.followup.send(f"Error: {e}", ephemeral=True)
 
 @bot.tree.command(name="leave", description="Leave voice channel")
 async def leave(interaction: discord.Interaction):
