@@ -1,0 +1,82 @@
+2026-02-08 17:34:10 INFO     discord.client logging in using static token
+2026-02-08 17:34:12 INFO     discord.gateway Shard ID None has connected to Gateway (Session ID: ce51c64b4a84acaa4bfe23438953a9da).
+reze#1466 is ready!
+Synced 2 slash commands
+2026-02-08 17:34:18 INFO     discord.voice_client Connecting to voice...
+2026-02-08 17:34:18 INFO     discord.voice_client Starting voice handshake... (connection attempt 1)
+2026-02-08 17:34:19 INFO     discord.voice_client Voice handshake complete. Endpoint found c-cgk02-98f2fbe0.discord.media
+2026-02-08 17:34:20 ERROR    discord.voice_client Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2026-02-08 17:34:21 INFO     discord.voice_client The voice handshake is being terminated for Channel ID 1113996605738205251 (Guild ID 1113996604941283369)
+2026-02-08 17:34:21 INFO     discord.voice_client Starting voice handshake... (connection attempt 2)
+2026-02-08 17:34:21 INFO     discord.voice_client Voice handshake complete. Endpoint found c-cgk02-98f2fbe0.discord.media
+2026-02-08 17:34:21 ERROR    discord.voice_client Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2026-02-08 17:34:24 INFO     discord.voice_client The voice handshake is being terminated for Channel ID 1113996605738205251 (Guild ID 1113996604941283369)
+2026-02-08 17:34:24 INFO     discord.voice_client Starting voice handshake... (connection attempt 3)
+2026-02-08 17:34:25 INFO     discord.voice_client Voice handshake complete. Endpoint found c-cgk02-98f2fbe0.discord.media
+2026-02-08 17:34:25 ERROR    discord.voice_client Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+Unclosed connection
+client_connection: Connection<ConnectionKey(host='c-cgk02-98f2fbe0.discord.media', port=443, is_ssl=True, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+Unclosed connection
+client_connection: Connection<ConnectionKey(host='c-cgk02-98f2fbe0.discord.media', port=443, is_ssl=True, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None)>
+2026-02-08 17:34:30 INFO     discord.voice_client The voice handshake is being terminated for Channel ID 1113996605738205251 (Guild ID 1113996604941283369)
+2026-02-08 17:34:30 INFO     discord.voice_client Starting voice handshake... (connection attempt 4)
+2026-02-08 17:34:31 INFO     discord.voice_client Voice handshake complete. Endpoint found c-cgk02-98f2fbe0.discord.media
+2026-02-08 17:34:31 ERROR    discord.voice_client Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2026-02-08 17:34:38 INFO     discord.voice_client The voice handshake is being terminated for Channel ID 1113996605738205251 (Guild ID 1113996604941283369)
+2026-02-08 17:34:38 INFO     discord.voice_client Starting voice handshake... (connection attempt 5)
+2026-02-08 17:34:39 INFO     discord.voice_client Voice handshake complete. Endpoint found c-cgk02-98f2fbe0.discord.media
+2026-02-08 17:34:39 ERROR    discord.voice_client Failed to connect to voice... Retrying...
+Traceback (most recent call last):
+  File "/root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/voice_client.py", line 395, in connect
+    self.ws = await self.connect_websocket()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/voice_client.py", line 366, in connect_websocket
+    await ws.poll_event()
+  File "/root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/gateway.py", line 1011, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 4006
+2026-02-08 17:34:48 INFO     discord.voice_client The voice handshake is being terminated for Channel ID 1113996605738205251 (Guild ID 1113996604941283369)
+^C2026-02-08 17:36:00 INFO     discord.voice_client The voice handshake is being terminated for Channel ID 1113996605738205251 (Guild ID 1113996604941283369)
+Task exception was never retrieved
+future: <Task finished name='Task-60' coro=<VoiceClient.poll_voice_ws() done, defined at /root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/voice_client.py:457> exception=AttributeError("'_MissingSentinel' object has no attribute 'poll_event'")>
+Traceback (most recent call last):
+  File "/root/bot/ajasendiri-bot/venv/lib/python3.11/site-packages/discord/voice_client.py", line 461, in poll_voice_ws
+    await self.ws.poll_event()
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: '_MissingSentinel' object has no attribute 'poll_event'
