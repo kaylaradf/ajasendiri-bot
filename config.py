@@ -35,3 +35,11 @@ CHAR_REPLACEMENTS = {
     '7': 't', '+': 't',
     '8': 'b', '6': 'g'
 }
+
+# Voice channel configuration
+VOICE_CONFIG = {
+    "audio_file": "assets/loop-audio.mp3",  # Audio file to loop
+    "channel_id": None,  # Set your voice channel ID here (optional)
+    "bitrate": 128,  # Audio quality in kbps (64, 96, 128, 192, 256, 320)
+    "volume": 0.15  # Volume level (0.0 - 1.0, default 0.15 for background opacity)
+}
